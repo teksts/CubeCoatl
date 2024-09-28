@@ -31,38 +31,38 @@ Environment variables are populated from the `.env` file. There is no `.env` fil
 
 Here is a table on how to fill out the env vars:
 
-| Variable Name          | Description                                                                                  | Required? |
-| ---------------------- | -------------------------------------------------------------------------------------------- | --------- | --- |
-| AWS_ACCESS_KEY_ID      | The AWS access key for your account.                                                         | Yes       |
-| AWS_LOG_GROUP          | The name of the AWS CloudWatch log group to use.                                             | Yes       |
-| AWS_LOG_STREAM         | The name of the AWS CloudWatch log stream to use.                                            |           |
-| AWS_REGION             | The AWS region to use.                                                                       | Yes       |
-| AWS_SECRET_ACCESS_KEY  | The AWS secret access key for your account.                                                  | Yes       |
-| CUBECOBRA_VERSION      | The version of Cube Cobra.                                                                   |           |
-| DATA_BUCKET            | The name of the AWS S3 bucket to use. You will need to create this bucket in your account.   | Yes       |
-| DOMAIN                 | The domain name of the server. Used for external redirects such as emails.                   | Yes       |
-| DOWNTIME_ACTIVE        | Whether or not the site is in downtime mode.                                                 |           |
-| DYNAMO_PREFIX          | The prefix to use for DynamoDB tables. You can leave this as the default value               | Yes       |
-| EMAIL_CONFIG_PASSWORD  | The password for the email account to use for sending emails.                                |           |
-| EMAIL_CONFIG_USERNAME  | The username for the email account to use for sending emails.                                |           |
-| ENV                    | The environment to run Cube Cobra in.                                                        | Yes       | \   |
-| NITROPAY_ENABLED       | Whether or not to enable NitroPay, our ad provider.                                          |           |
-| NODE_ENV               | The environment to run Cube Cobra in.                                                        | Yes       |
-| PATREON_CLIENT_ID      | The client ID for the Patreon OAuth app.                                                     |           |
-| PATREON_CLIENT_SECRET  | The client secret for the Patreon OAuth app.                                                 |           |
-| PATREON_HOOK_SECRET    | The secret for the Patreon webhook.                                                          |           |
-| PATREON_REDIRECT       | The redirect URL for the Patreon OAuth app.                                                  |           |
-| PORT                   | The port to run Cube Cobra on.                                                               | Yes       |
-| REDIS_HOST             | The URL of the Redis server.                                                                 | Yes       |
-| REDIS_SETUP            | Whether or not to setup the Redis server - this is needed for Redis but not for elasticache. |           |
-| SECRET                 | A secret phrase for encryption. You can leave the default value.                             | Yes       |
-| SESSION_SECRET         | A secret phrase for session encryption. You can leave the default value.                     | Yes       |
-| SESSION                | The name of the session cookie. You can leave the default value.                             | Yes       |
-| TCG_PLAYER_PRIVATE_KEY | The private key for the TCGPlayer API.                                                       |           |
-| TCG_PLAYER_PUBLIC_KEY  | The public key for the TCGPlayer API.                                                        |           |
-| CACHE_ENABLED          | Whether or not to enable caching.                                                            |           |
-| AUTOSCALING_GROUP      | The name of the autoscaling group this instance is run in, used for the distributed cache.   |           |
-| CACHE_SECRET           | The secret for the distributed cache.                                                        |           |
+| Variable Name          | Description                                                                                         | Required? |
+|------------------------|-----------------------------------------------------------------------------------------------------|-----------|
+| AWS_ACCESS_KEY_ID       | The AWS access key for your account.                                                                | Yes       |
+| AWS_LOG_GROUP           | The name of the AWS CloudWatch log group to use.                                                    | Yes       |
+| AWS_LOG_STREAM          | The name of the AWS CloudWatch log stream to use.                                                   |           |
+| AWS_REGION              | The AWS region to use.                                                                              | Yes       |
+| AWS_SECRET_ACCESS_KEY   | The AWS secret access key for your account.                                                         | Yes       |
+| CUBECOBRA_VERSION       | The version of Cube Cobra.                                                                          |           |
+| DATA_BUCKET             | The name of the AWS S3 bucket to use. You will need to create this bucket in your account.          | Yes       |
+| DOMAIN                  | The domain name of the server. Used for external redirects such as emails.                          | Yes       |
+| DOWNTIME_ACTIVE         | Whether or not the site is in downtime mode.                                                        |           |
+| DYNAMO_PREFIX           | The prefix to use for DynamoDB tables. You can leave this as the default value.                     | Yes       |
+| EMAIL_CONFIG_PASSWORD   | The password for the email account to use for sending emails.                                       |           |
+| EMAIL_CONFIG_USERNAME   | The username for the email account to use for sending emails.                                       |           |
+| ENV                     | The environment to run Cube Cobra in.                                                              | Yes       |
+| NITROPAY_ENABLED        | Whether or not to enable NitroPay, our ad provider.                                                 |           |
+| NODE_ENV                | The environment to run Cube Cobra in.                                                              | Yes       |
+| PATREON_CLIENT_ID       | The client ID for the Patreon OAuth app.                                                           |           |
+| PATREON_CLIENT_SECRET   | The client secret for the Patreon OAuth app.                                                       |           |
+| PATREON_HOOK_SECRET     | The secret for the Patreon webhook.                                                                |           |
+| PATREON_REDIRECT        | The redirect URL for the Patreon OAuth app.                                                        |           |
+| PORT                    | The port to run Cube Cobra on.                                                                     | Yes       |
+| REDIS_HOST              | The URL of the Redis server.                                                                       | Yes       |
+| REDIS_SETUP             | Whether or not to set up the Redis server - this is needed for Redis but not for Elasticache.       |           |
+| SECRET                  | A secret phrase for encryption. You can leave the default value.                                   | Yes       |
+| SESSION_SECRET          | A secret phrase for session encryption. You can leave the default value.                           | Yes       |
+| SESSION                 | The name of the session cookie. You can leave the default value.                                   | Yes       |
+| TCG_PLAYER_PRIVATE_KEY  | The private key for the TCGPlayer API.                                                             |           |
+| TCG_PLAYER_PUBLIC_KEY   | The public key for the TCGPlayer API.                                                              |           |
+| CACHE_ENABLED           | Whether or not to enable caching.                                                                  |           |
+| AUTOSCALING_GROUP       | The name of the autoscaling group this instance is run in, used for the distributed cache.         |           |
+| CACHE_SECRET            | The secret for the distributed cache.                                                              |           |
 
 ### Initial Setup
 
